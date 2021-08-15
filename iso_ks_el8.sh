@@ -63,4 +63,5 @@ xorriso \
   -boot_image any replay \
   -outdev "${ISO_DST}"
 
-# dd if=${ISO_DST}.iso of=/dev/sda bs=8192 conv=fdatasync
+# where '/dev/sdX' is bootable external storage device
+# dd if=${ISO_DST} of=/dev/sdX bs=8192 conv=fdatasync
